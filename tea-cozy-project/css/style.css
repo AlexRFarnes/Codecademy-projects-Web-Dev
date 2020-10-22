@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header {
+  height: 69px;
+  width: 70%;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+  background: black;
+}
+
+.logo {
+  position: absolute;
+  height: 50px;
+  padding-left: 10px;
+  left: 10px;
+  top: 10px;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 20px 10px 20px 10px;
+}
+
+.banner {
+  margin-top: 69px;
+  background: url("../images/img-mission-background.jpg") center / cover
+    no-repeat;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.title {
+  background: black;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
+
+.tea-section {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.row img {
+  margin-bottom: 10px;
+}
+
+.row-1 {
+  justify-content: space-between;
+}
+
+.row-2 {
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.row-2 img:first-child {
+  margin-right: 25px;
+}
+
+.row-2 img:last-child {
+  margin-left: 25px;
+}
+
+.banner-2 {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  background: url("../images/img-locations-background.jpg") 10% 10% / cover
+    no-repeat;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locations {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.location {
+  width: 300px;
+  opacity: 1;
+  background: black;
+  margin: 0 20px;
+  padding: 20px 0px 15px;
+}
+
+.location p {
+  padding: 25px 0;
+}
+
+footer {
+  margin-top: 15px;
+  height: 200px;
+}
+
+footer h5 {
+  margin: 30px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: seashell;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #666666;
+}
+
+.end-note {
+  align-self: flex-start;
+  padding-left: 20px;
+}
