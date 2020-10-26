@@ -60,7 +60,11 @@ p {
   margin-bottom: 35px;
 }
 
+footer {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
 .end-note {
-  align-self: flex-end;
   color: gray;
 }
