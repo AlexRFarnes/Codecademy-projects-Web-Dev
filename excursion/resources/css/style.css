@@ -8,6 +8,10 @@
 
 body {
   background: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .container {
@@ -18,15 +22,45 @@ body {
 }
 
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 50px;
   color: white;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 
 a {
   color: aquamarine;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+video {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 21px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.big-img {
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin-bottom: 35px;
+}
+
+.end-note {
+  align-self: flex-end;
+  color: gray;
 }
