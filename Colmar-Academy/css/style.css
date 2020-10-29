@@ -294,6 +294,32 @@
         font-weight: 500;
     }
     /* MEDIA QUERY */
+    
+    @media only screen and (min-width: 1024px) {
+        .courses-wrapper {
+            padding: 0px 72px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .course-wrapper {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+        }
+        .courses-wrapper .course-wrapper {
+            flex: 1 1 20%;
+        }
+        .courses-wrapper .course-section {
+            background: blue;
+        }
+        .courses-wrapper .img-wrapper {
+            width: 100%;
+        }
+        .courses-wrapper img {
+            width: 100%;
+        }
+    }
     /* THESIS SECTION */
     
     .thesis-container {
