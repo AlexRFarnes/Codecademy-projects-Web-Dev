@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 li,
@@ -175,7 +176,8 @@ nav img {
 .course-section {
     text-align: left;
     color: #363636;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 
