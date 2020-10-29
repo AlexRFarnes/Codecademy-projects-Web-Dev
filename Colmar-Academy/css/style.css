@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    color: #6d6c6c;
 }
 
 li,
@@ -23,10 +24,19 @@ video {
     box-sizing: border-box;
 }
 
-h2 {
-    color: #3e3e3e;
-    font-size: 2.5rem;
+h2, h3 {
     font-weight: 700;
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: #363636;
+
+}
+
+h3 {
+    color: #505050;
+    font-size: 1.75rem;
 }
 
 
@@ -61,19 +71,47 @@ nav img {
 
 /* MEDIA QUERY */
 
+@media only screen and (min-width: 1024px){
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        align-items: center;
+    }
+    .desktop h1{
+        text-align: left;
+        border: 1px solid red;
+        display: inline-block;
+    }
+    .desktop  ul {
+       text-align: right;
+        border: 1px solid red;
+        display: inline;
+        padding-right: 24px;
+    }
+    .desktop:nt li {
+        display: inline;
+        padding-right:
+    }
+    .light {
+        font-weight: 400;
+    }
+  
+}
+
 
 /* HERO SECTION */
 
 .hero-container {
     display: flex;
-    height: 600px;
     flex-direction: column;
     background: #d4d4d4;
     margin-bottom: 16px;
 }
 
 .hero-img {
-    height: 350px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -109,7 +147,10 @@ nav img {
 }
 
 .large-text {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #505050;
+
 }
 
 
@@ -150,8 +191,8 @@ nav img {
 
 .courses-container {
     margin-top: -32px;
-    border-top: 1px solid rgba(100, 100, 100, 0.1);
-    border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+    border-top: 1px solid rgba(100, 100, 100, 0.3);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     padding-top: 32px;
     text-align: center;
     display: flex;
@@ -176,9 +217,32 @@ nav img {
 .course-section {
     text-align: left;
     color: #363636;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 
 /* MEDIA QUERY */
+
+/* THESIS SECTION */
+
+.thesis-container {
+    padding:32px 0px 24px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.thesis-container h2{
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* MEDIA QUERY */
+
+/* FOOTER */
+footer {
+    padding: 16px 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
