@@ -66,7 +66,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    flex: 1 1 75%;
+    flex: 1 0 75%;
     justify-content: space-around;
     text-align: right;
     display: inline;
@@ -91,7 +91,7 @@ nav .logo {
 .desktop-nav h1 {
     text-align: left;
     display: inline-block;
-    flex: 1 1 25%;
+    flex: 1 0 25%;
 }
 
 .desktop-nav li {
@@ -122,11 +122,11 @@ li:nth-child(-n + 3) {
         justify-content: space-between;
     }
     .mobile-nav h1 {
-        flex: 1 1 25%;
+        flex: 1 0 25%;
     }
     .mobile-nav ul {
         display: flex;
-        flex: 1 1 75%;
+        flex: 1 0 75%;
         padding-right: 0px;
         justify-content: space-between;
     }
@@ -146,7 +146,7 @@ li:nth-child(-n + 3) {
 .hero-img {
     height: auto;
     overflow: hidden;
-    flex: 1 1 60%;
+    flex: 1 0 60%;
     padding: 0;
 }
 
@@ -155,7 +155,7 @@ li:nth-child(-n + 3) {
 }
 
 .hero-info {
-    flex: 1 1 40%;
+    flex: 1 0 40%;
     align-self: center;
     padding-left: 24px;
 }
@@ -226,7 +226,7 @@ li:nth-child(-n + 3) {
 .left-section {
     display: flex;
     flex-direction: column;
-    flex: 1 1 60%;
+    flex: 1 0 60%;
     padding-bottom: 32px;
 }
 
@@ -245,11 +245,10 @@ li:nth-child(-n + 3) {
 .right-section {
     display: flex;
     flex-direction: column;
-    flex: 1 1 40%;
+    flex: 1 0 40%;
     border-left: 1px solid rgba(100, 100, 100, 0.3);
     padding-top: 16px;
     padding-bottom: 32px;
-    /* padding-bottom: 16px; */
 }
 
 .section {
@@ -258,7 +257,7 @@ li:nth-child(-n + 3) {
 }
 
 .section .img-wrapper-small {
-    flex: 1 1 35%;
+    flex: 1 0 35%;
 }
 
 .section-text {
@@ -272,19 +271,17 @@ li:nth-child(-n + 3) {
 
 .text-wrapper {
     margin-left: 24px;
-    /* display: flex; */
-    /* flex-direction: column; */
     height: 100%;
 }
 
 .text-wrapper h2 {
     margin-bottom: 24px;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 
 .text-wrapper p {
     font-size: 1rem;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     line-height: 1.625rem;
 }
 
@@ -362,7 +359,6 @@ li:nth-child(-n + 3) {
 /* COURSE INFORMATION */
 
 .courses-container {
-    /* margin-top: 32px; */
     padding: 32px 56px;
     background: #eaebed;
 }
@@ -375,7 +371,7 @@ li:nth-child(-n + 3) {
 .courses-wrapper-up,
 .courses-wrapper-down {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .courses-wrapper-up {
@@ -383,9 +379,9 @@ li:nth-child(-n + 3) {
 }
 
 .course-wrapper {
-    flex: 1 1 30%;
-    /* background-color: #f3f5f4; */
+    flex: 1 0 30%;
     margin: 0 16px;
+    background: #ffffff;
 }
 
 .course-wrapper .img-wrapper-courses,
@@ -396,7 +392,6 @@ li:nth-child(-n + 3) {
 
 .course-section {
     padding: 16px 16px 24px;
-    background: #ffffff;
 }
 
 .course-section h4 {
@@ -415,6 +410,7 @@ li:nth-child(-n + 3) {
 .course-section h4,
 .course-section p {
     color: #b4b4b4;
+    flex: 1 0 auto;
 }
 
 
