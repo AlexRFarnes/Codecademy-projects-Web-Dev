@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 80%;
+    width: 75%;
     margin: 20px auto;
     font-family: 'Libre Baskerville', serif;
     font-size: 16px;
@@ -58,7 +58,7 @@ section > h2 {
 
 .color {
     min-height: 150px;
-    flex: 1 300px;
+    flex: 1 500px;
     margin: 10px 10px;
     display: flex;
     flex-direction: column;
