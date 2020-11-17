@@ -1,0 +1,181 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+section{
+    display: flex;
+    margin: 10px 0px;
+}
+
+section > h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+.colors{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #333;
+    padding: 30px 20px;
+}
+.colors > h2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.color {
+    min-height: 150px;
+    flex: 1 300px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color p{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.color h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+
+.color1{
+    background-color: #00C8D8;
+}
+.color2{
+    background-color: #F2CD2C;
+}
+.color3{
+    background-color: #143642;
+    color: #FCFAFA;
+}
+.color4{
+    background-color: #F06449;
+}
+.color5{
+    background-color: #FCFAFA;
+}
+
+
+.fonts {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #333;
+    padding: 30px 20px;
+}
+
+.fonts > h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.font {
+    margin: 10px 10px;
+    flex: 1 400px;
+    padding: 10px;
+}
+
+.font p {
+    margin: 10px 0px;
+}
+
+
+.title-font {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.baskerville{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.monospace{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.normal{
+    font-weight: 400;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+.text_styles{
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    border: 1px solid #333;
+    padding: 30px 20px;
+}
+
+.text_styles > h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.styles {
+    margin: 10px 0px;
+}
+.styles * {
+    margin: 0;
+    padding: 0;
+}
+
+.styles ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.styles li {
+    margin: 10px 0px;
+}
