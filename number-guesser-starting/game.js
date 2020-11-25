@@ -88,8 +88,10 @@ const handleValueChange = value => {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
   } else if (value > 9) {
+    alert('The number is out of range!');
     addButton.setAttribute('disabled', true);
   } else if (value <= 0) {
+    alert('The number is out of range!');
     subtractButton.setAttribute('disabled', true);
   }
 }
