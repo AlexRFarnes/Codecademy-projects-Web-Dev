@@ -15,8 +15,18 @@ const _ = {
         const clampedNumber = Math.min(lowerClampedNumber, upperBound);
         return clampedNumber;
     },
-    inRange() {
-
+    inRange(num, start, end) {
+        if (end === undefined) {
+            end = start;
+            start = 0;
+        }
+        if (start > end) {
+            [start, end] = [end, start];
+        }
+        if (num >= start && num < end) {
+            return true;
+        }
+        return false;
     },
 };
 
