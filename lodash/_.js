@@ -1,17 +1,5 @@
 const _ = {
     /* ---------NUMBERS METHODS--------- */
-
-    // My initial idea for clamp method
-    // clamp(num, lowerBound, upperBound) {
-    //     if (num < lowerBound) {
-    //         return lowerBound;
-    //     } else if (num > upperBound) {
-    //         return upperBound;
-    //     } else {
-    //         return num;
-    //     }
-    // },
-    // Codecademy suggested implementation for clamp method
     clamp(num, lowerBound, upperBound) {
         const lowerClampedNumber = Math.max(num, lowerBound);
         const clampedNumber = Math.min(lowerClampedNumber, upperBound);
@@ -39,9 +27,8 @@ const _ = {
     },
     pad(string, length){
         if(string.length > length) return string;
-
         let totalPadding = length - string.length;
-        let beginPadding = Math.floor(totalPadding/2);
+        let beginPadding = Math.floor(totalPadding / 2);
         let endPadding = totalPadding - beginPadding;
         return ' '.repeat(beginPadding) + string + ' '. repeat(endPadding);
     },
@@ -69,7 +56,28 @@ const _ = {
         return undefined;
     },
     /* ---------ARRAY METHODS--------- */
-    
+    drop(arr, num){
+        let dropArray;
+        if(num === undefined){
+            num = 1;
+        }
+        dropArray = arr.slice(num);
+        return dropArray;
+    },
+    dropWhile(arr, predicate){
+        const n = arr.findIndex((element, index) => {
+            return !predicate(element, index, arr);
+        });
+        return this.drop(arr, n);
+    },
+    chunk(arr, size){
+        if(size === undefined) {size = 1};
+        const arrayChunks = [];
+        for(let i = 0; i < arr.length; i += size){
+            arrayChunks.push(arr.slice(i, i+size));
+        }
+        return arrayChunks;
+    },
 };
 
 
